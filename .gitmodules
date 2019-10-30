@@ -1,0 +1,3 @@
+[submodule "ukulele_chords_detector"]
+	path = ukulele_chords_detector
+	url = https://github.com/alexander-rykhlitskiy/ukulele_chords_detector
