@@ -1,0 +1,16 @@
+input_features:
+    -
+        name: audio_path
+        type: audio
+        preprocessing:
+            audio_file_length_limit_in_s: 7.0
+            audio_feature:
+                type: stft
+                window_length_in_s: 0.04
+                window_shift_in_s: 0.02
+        encoder: cnnrnn
+
+output_features:
+    -
+        name: label
+        type: binary
