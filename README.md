@@ -1,7 +1,9 @@
 # Ukulele Chords Detector Ludwig edition
 Based on https://uber.github.io/ludwig/examples/#spoken-digit-speech-recognition
 
-For more info and sounds data see https://github.com/alexander-rykhlitskiy/ukulele_chords_detector
+For docs see https://uber.github.io/ludwig/user_guide/#audio-features
+
+For the origins of the project and sounds data see https://github.com/alexander-rykhlitskiy/ukulele_chords_detector
 
 ```bash
 docker build -t test_ludwig .
