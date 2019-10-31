@@ -32,3 +32,10 @@ ludwig predict --data_csv test_notes.csv -m results/experiment_run_/model
 - Accuracy seems to be lower
 - Less control, trickier errors (surprise!)
 ```
+
+### Conclusion
+Examples from docs with prepared datasets run pretty smoothly, though you still need to read more, e.g. to find out you need ludwig[audio] package to be installed.
+
+But when you prepare your own data, most likely you will face tricky obscure erros like `ValueError: could not broadcast input array from shape (2400,2) into shape (2400)`. This error means you need wav file with 1 channel instead of 2. It can be easily achieved with `sox {} {}.wav remix 1`, but still it creates some difficulties with getting started.
+
+Maybe in version 1.0 they will improve docs and error messages, and then it will be more convenient. But for now I would prefer to write python script based on pure TensorFlow.
